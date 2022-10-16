@@ -73,7 +73,7 @@ class AsteroidRepository(private val database: AsteroidDatabase) {
                                 estimatedDiameter = item.estimatedDiameter.kilometers.estimatedDiameterMax.toString(),
                                 relativeVelocity = item.closeApproachData[0].relativeVelocity.kilometersPerSecond,
                                 distanceFromEarth = item.closeApproachData[0].missDistance.astronomical,
-                                isPotentiallyHazardous = true,
+                                isPotentiallyHazardous = item.isPotentiallyHazardous,
                             )
                         }
                 database.asteroidDao.insertAll(items.toEntity())

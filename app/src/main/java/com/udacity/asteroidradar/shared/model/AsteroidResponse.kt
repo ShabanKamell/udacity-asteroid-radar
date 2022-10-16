@@ -22,6 +22,9 @@ data class AsteroidData(
 
     @Json(name = "close_approach_data")
     var closeApproachData: List<CloseApproachDatum>,
+
+    @Json(name = "is_potentially_hazardous_asteroid")
+    var isPotentiallyHazardous: Boolean
 )
 
 data class CloseApproachDatum(
