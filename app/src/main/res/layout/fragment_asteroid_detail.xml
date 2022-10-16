@@ -22,6 +22,7 @@
             android:adjustViewBounds="true"
             android:contentDescription="@string/asteroid_hazard_image"
             app:asteroidStatusImage="@{asteroid.potentiallyHazardous}"
+            app:imageResource="@{asteroid.hazardousImage}"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
