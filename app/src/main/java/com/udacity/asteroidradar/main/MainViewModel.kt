@@ -31,7 +31,7 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
         when (it!!) {
             AsteroidFilter.WEEK -> asteroidRepository.weekAsteroids
             AsteroidFilter.TODAY -> asteroidRepository.todayAsteroids
-            else -> asteroidRepository.allAsteroids
+            AsteroidFilter.ALL -> asteroidRepository.allAsteroids
         }
     }
 

@@ -39,7 +39,7 @@ class AsteroidRepository(private val database: AsteroidDatabase) {
                 DateTimeFormatter.ISO_DATE
             ),
             AppDate.format(
-                LocalDate.now().minusDays(AppDate.DAYS),
+                LocalDate.now().plusDays(AppDate.DAYS),
                 DateTimeFormatter.ISO_DATE
             )
         )

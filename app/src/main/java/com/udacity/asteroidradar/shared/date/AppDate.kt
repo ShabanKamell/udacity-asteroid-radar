@@ -28,9 +28,9 @@ object AppDate {
     fun nextWeekDates(): ArrayList<String> {
         val formattedDateList = ArrayList<String>()
 
-        val now = LocalDate.now()
+        val date = LocalDate.now().minusDays(1)
         for (i in 0..DAYS) {
-            val d = format(now.plusDays(i + 1))
+            val d = format(date.plusDays(i + 1))
             formattedDateList.add(d)
         }
 
